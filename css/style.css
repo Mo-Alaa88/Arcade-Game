@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+}
+
+button {
+  background-color: #2e3d49;
+  color: #ffffff;
+  border: solid;
+  border-width: 0px;
+  border-color: #2e3d49;
+  font-weight: bold;
+}
+
+/* Settings Sidebar Div */
+
+.sidebar {
+  background-color: #2e3d49;
+  color: #fff;
+  border-radius: 8px;
+}
+
+#tools,
+#levels-div {
+  display: inline-flex;
+}
+
+/* Player Characters div */
+
+.char {
+  width: 101px;
+  height: 171px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+
+/* Levels div */
+
+.level {
+  width: 70px;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.level.selected {
+  background-image: url('../images/Star-square.png');
+  background-size: contain;
+}
+
+/* Modal Div */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content div */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  background: #2e3d49;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+

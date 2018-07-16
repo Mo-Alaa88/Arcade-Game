@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Effective JavaScript: Frogger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Settings sidebar div -->
+   <section class="sidebar">
+    <div id="tools">
+    <h2>Select Level</h2>
+    <div id="levels-div">
+      <div class="level selected" id="1">1</div>
+      <div class="level" id="2">2</div>
+      <div class="level" id="3">3</div>
+    </div>
+    <button id="restart">Restart Game</button>
+  </section>
+
+  <!-- Win Greeting Modal -->
+  <div id="win-modal" class="modal">
+    <div class="modal-content">
+      <h2>Congratulations!</h2>
+      <h3>You won, Good Job !!</h3>
+      <p>Do you wish play again?</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+
+</html>
