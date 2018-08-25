@@ -1,3 +1,4 @@
+'use strict';
 class GameComponent {
   constructor(image, gridRow, xPosition) {
     this.sprite = image;
@@ -53,17 +54,21 @@ class Player extends GameComponent {
   }
 
   update() {
-    allEnemies.forEach((enemy) => {
+        this.col = 2;
+   this.row = 4;
+   this.setXYPosition();
+   return;
+/*    allEnemies.forEach((enemy) => {
       if (this.checkCollision(enemy)) {
         this.col = 2;
         this.row = 4;
         this.setXYPosition();
         return;
       }
-    });
+    });*/
   }
 
-  checkCollision(enemy) {
+/*  checkCollision(enemy) {
     if (this.row == enemy.row) {
       let playerLeft = this.x + 20;
       let playerRight = playerLeft + 50;
@@ -74,7 +79,7 @@ class Player extends GameComponent {
       }
     }
     return false;
-  }
+  }*/
 
   handleInput(pressedKey) {
     if (this.row > 0) {
@@ -112,7 +117,7 @@ class Player extends GameComponent {
 
 function announceWinning() {
   setTimeout(function() {
-    document.getElementById("win-modal").style.display = "block";
+    document.getElementById('win-modal').style.display = 'block';
   }, 1000);
 }
 
